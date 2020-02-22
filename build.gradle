@@ -9,6 +9,7 @@ version '0.0.1-SNAPSHOT'
 repositories {
     mavenLocal()
     mavenCentral()
+    maven { url "https://dl.bintray.com/lukeds-it/maven" }
 }
 
 sourceSets {
@@ -17,6 +18,7 @@ sourceSets {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-js"
+    implementation "it.ldsoftware:firebase-ktyped:0.0.1-ktyped-init-20200221181532"
     testImplementation "org.jetbrains.kotlin:kotlin-test-js"
 }
 
